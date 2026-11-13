@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="460" viewBox="0 0 1000 460" role="img" aria-label="Терминал: python3 ramazan.py падает с SleepNotFoundError, перезапускается и отвечает HTTP 200 OK">
+  <rect x="0.5" y="0.5" width="999" height="459" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <path d="M0.5 40 V12.5 A12 12 0 0 1 12.5 0.5 H987.5 A12 12 0 0 1 999.5 12.5 V40 Z" fill="#161b22"/>
+  <line x1="0" y1="40" x2="1000" y2="40" stroke="#30363d"/>
+  <circle cx="24" cy="20" r="6" fill="#ff5f56"/><circle cx="44" cy="20" r="6" fill="#ffbd2e"/><circle cx="64" cy="20" r="6" fill="#27c93f"/>
+  <text x="500.0" y="25" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13" fill="#8b949e">ramazan@prod-01: ~/life</text>
+  <rect y="287" x="16" width="968" height="28" rx="4" fill="#f85149" opacity="0"><animate attributeName="opacity" values="0;0;0.22;0;0" keyTimes="0;0.4278;0.4333;0.4944;1" dur="18.0s" repeatCount="indefinite"/></rect>
+  <g font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">
+    <clipPath id="c0"><rect x="0" y="62" height="28" width="0">
+      <animate attributeName="width" values="0;0;1000;1000;0" keyTimes="0;0.0278;0.1111;0.9667;1" dur="18.0s" repeatCount="indefinite"/></rect></clipPath>
+    <g clip-path="url(#c0)"><text x="32" y="84" xml:space="preserve"><tspan fill="#3fb950">$ </tspan><tspan fill="#c9d1d9">python3 ramazan.py</tspan></text></g>
+    <clipPath id="c1"><rect x="0" y="90" height="28" width="0">
+      <animate attributeName="width" values="0;0;1000;1000;0" keyTimes="0;0.1389;0.1556;0.9667;1" dur="18.0s" repeatCount="indefinite"/></rect></clipPath>
+    <g clip-path="url(#c1)"><text x="32" y="112" xml:space="preserve"><tspan fill="#c9d1d9">Traceback (most recent call last):</tspan></text></g>
+    <clipPath id="c2"><rect x="0" y="118" height="28" width="0">
+      <animate attributeName="width" values="0;0;1000;1000;0" keyTimes="0;0.1722;0.1889;0.9667;1" dur="18.0s" repeatCount="indefinite"/></rect></clipPath>
+    <g clip-path="url(#c2)"><text x="32" y="140" xml:space="preserve"><tspan fill="#8b949e">  File "life.py", line 2024, in hackathon_mode</tspan></text></g>
+    <clipPath id="c3"><rect x="0" y="146" height="28" width="0">
+      <animate attributeName="width" values="0;0;1000;1000;0" keyTimes="0;0.1944;0.2222;0.9667;1" dur="18.0s" repeatCount="indefinite"/></rect></clipPath>
+    <g clip-path="url(#c3)"><text x="32" y="168" xml:space="preserve"><tspan fill="#c9d1d9">    ship(MedAI, StudyMate, Vibe_wear, FACE_Detect)</tspan></text></g>
+    <clipPath id="c4"><rect x="0" y="174" height="28" width="0">
+      <animate attributeName="width" values="0;0;1000;1000;0" keyTimes="0;0.2444;0.2611;0.9667;1" dur="18.0s" repeatCount="indefinite"/></rect></clipPath>
+    <g clip-path="url(#c4)"><text x="32" y="196" xml:space="preserve"><tspan fill="#8b949e">  File "brain.py", line 42, in ideas</tspan></text></g>
+    <clipPath id="c5"><rect x="0" y="202" height="28" width="0">
+      <animate attributeName="width" values="0;0;1000;1000;0" keyTimes="0;0.2667;0.2944;0.9667;1" dur="18.0s" repeatCount="indefinite"/></rect></clipPath>
+    <g clip-path="url(#c5)"><text x="32" y="224" xml:space="preserve"><tspan fill="#c9d1d9">    while coffee &gt; 0: build_something()</tspan></text></g>
+    <clipPath id="c6"><rect x="0" y="230" height="28" width="0">
+      <animate attributeName="width" values="0;0;1000;1000;0" keyTimes="0;0.3167;0.3333;0.9667;1" dur="18.0s" repeatCount="indefinite"/></rect></clipPath>
+    <g clip-path="url(#c6)"><text x="32" y="252" xml:space="preserve"><tspan fill="#8b949e">  File "stack.py", line 7, in &lt;module&gt;</tspan></text></g>
+    <clipPath id="c7"><rect x="0" y="258" height="28" width="0">
+      <animate attributeName="width" values="0;0;1000;1000;0" keyTimes="0;0.3389;0.3667;0.9667;1" dur="18.0s" repeatCount="indefinite"/></rect></clipPath>
+    <g clip-path="url(#c7)"><text x="32" y="280" xml:space="preserve"><tspan fill="#c9d1d9">    import javascript, python, dart, java</tspan></text></g>
+    <clipPath id="c8"><rect x="0" y="286" height="28" width="0">
+      <animate attributeName="width" values="0;0;1000;1000;0" keyTimes="0;0.3944;0.4278;0.9667;1" dur="18.0s" repeatCount="indefinite"/></rect></clipPath>
+    <g clip-path="url(#c8)"><text x="32" y="308" xml:space="preserve"><tspan fill="#f85149">SleepNotFoundError: </tspan><tspan fill="#c9d1d9">сон не найден с 2024 года</tspan></text></g>
+    <clipPath id="c10"><rect x="0" y="342" height="28" width="0">
+      <animate attributeName="width" values="0;0;1000;1000;0" keyTimes="0;0.4611;0.4778;0.9667;1" dur="18.0s" repeatCount="indefinite"/></rect></clipPath>
+    <g clip-path="url(#c10)"><text x="32" y="364" xml:space="preserve"><tspan fill="#d29922">перезапуск человека</tspan></text></g>
+    <clipPath id="c11"><rect x="0" y="370" height="28" width="0">
+      <animate attributeName="width" values="0;0;1000;1000;0" keyTimes="0;0.6111;0.6444;0.9667;1" dur="18.0s" repeatCount="indefinite"/></rect></clipPath>
+    <g clip-path="url(#c11)"><text x="32" y="392" xml:space="preserve"><tspan fill="#3fb950">✓ HTTP 200 OK</tspan><tspan fill="#c9d1d9"> — открыт к коллабам и хакатонам</tspan></text></g>
+    <clipPath id="c12"><rect x="0" y="398" height="28" width="0">
+      <animate attributeName="width" values="0;0;1000;1000;0" keyTimes="0;0.6667;0.6694;0.9667;1" dur="18.0s" repeatCount="indefinite"/></rect></clipPath>
+    <g clip-path="url(#c12)"><text x="32" y="420" xml:space="preserve"><tspan fill="#3fb950">$ </tspan></text><rect x="51" y="406" width="9" height="18" fill="#c9d1d9"><animate attributeName="opacity" values="1;0" dur="1s" calcMode="discrete" repeatCount="indefinite"/></rect></g>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.4833;0.4839;0.9667;1" dur="18.0s" repeatCount="indefinite"/>
+      <rect x="250" y="352" width="300" height="12" rx="6" fill="#21262d"/>
+      <rect x="250" y="352" width="0" height="12" rx="6" fill="#d29922">
+        <animate attributeName="width" values="0;0;300;300;0" keyTimes="0;0.4833;0.5889;0.9667;1" dur="18.0s" repeatCount="indefinite"/>
+        <animate attributeName="fill" values="#d29922;#d29922;#3fb950;#3fb950;#d29922" keyTimes="0;0.5883;0.5889;0.9667;1" dur="18.0s" repeatCount="indefinite"/>
+      </rect>
+      <text x="566" y="364" fill="#8b949e" opacity="0">100%<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5889;0.5894;0.9667;1" dur="18.0s" repeatCount="indefinite"/></text>
+    </g>
+  </g>
+</svg>
