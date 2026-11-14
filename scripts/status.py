@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rebuilds assets/status-dark.svg and assets/status-light.svg from real commits.
+"""Rebuilds assets/status.svg (dark, own background) from real commits.
 
 Only counts are rendered: no repo names, no commit messages.
 
@@ -123,12 +123,8 @@ def collect():
 
 
 # ------------------------------------------------------------------ svg
-THEMES = {
-    "dark": dict(fg="#e6edf3", dim="#7d8590", line="#21262d", empty="#161b22",
-                 green=["#0e4429", "#006d32", "#26a641", "#39d353"], red="#f85149", yellow="#d29922"),
-    "light": dict(fg="#1f2328", dim="#656d76", line="#d0d7de", empty="#ebedf0",
-                  green=["#9be9a8", "#40c463", "#30a14e", "#216e39"], red="#cf222e", yellow="#9a6700"),
-}
+THEME = dict(bg="#0d1117", border="#30363d", fg="#e6edf3", dim="#7d8590", line="#21262d", empty="#161b22",
+             green=["#0e4429", "#006d32", "#26a641", "#39d353"], red="#f85149", yellow="#d29922")
 SANS = "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif"
 MONO = "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace"
 
@@ -201,6 +197,7 @@ def render(data, t):
     status_text = "частичный сбой (сон)" if overall_bad else "всё работает"
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="{SANS}" role="img" aria-label="Статус roma2246: {commits} коммитов за {DAYS} дней, {nights} ночных">
   <style>.c{{animation:in .4s ease-out both}}@keyframes in{{from{{opacity:0}}to{{opacity:1}}}}</style>
+  <rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="12" fill="{t["bg"]}" stroke="{t["border"]}"/>
   <text x="{X}" y="38" font-size="20" font-weight="600" fill="{t["fg"]}">{USER}<tspan fill="{t["dim"]}" font-weight="400"> / status</tspan></text>
   <circle cx="{W - X - 6}" cy="32" r="5" fill="{status_color}"/>
   <text x="{W - X - 20}" y="37" text-anchor="end" font-size="14" fill="{t["fg"]}">{status_text}</text>
@@ -217,9 +214,8 @@ def render(data, t):
 
 def main():
     data = collect()
-    for name, theme in THEMES.items():
-        with open(os.path.join(ROOT, "assets", f"status-{name}.svg"), "w", encoding="utf-8") as f:
-            f.write(render(data, theme))
+    with open(os.path.join(ROOT, "assets", "status.svg"), "w", encoding="utf-8") as f:
+        f.write(render(data, THEME))
     print(f"{sum(data['total'].values())} commits, langs: {[lang for lang, *_ in data['langs']]}")
 
 

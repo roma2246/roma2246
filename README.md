@@ -1,51 +1,23 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-  <img src="assets/header-light.svg" width="760" alt="curl -sI github.com/roma2246 → HTTP/2 500, потом 200. Ramazan Gabdulgumarov, fullstack, typescript, python, go">
-</picture>
+<img src="assets/header.svg" width="100%" alt="curl -sI github.com/roma2246 → HTTP/2 500, потом 200. Ramazan Gabdulgumarov, fullstack, typescript, python, go">
 
-Делаю фуллстек: фронт на React, бэк на Node, FastAPI или Go. Иногда с ML.
+Фуллстек: React, Node, FastAPI, Go. Иногда ML. Сейчас пишу **holdfast**, предохранитель для ИИ-агентов на Go: хук для Claude Code, который не даёт агенту сделать `rm -rf ~`, `git push --force` или `curl | sh`, а обычные правки пропускает со снапшотом.
 
-### Сейчас
+| проект | что это | стек |
+|---|---|---|
+| Qairu | клуб настольного тенниса: запись на игры, роли, рейтинг Elo | React, TS, Node, Neon |
+| [EmoCam](https://github.com/roma2246/FACE_Detect) | эмоции по веб-камере, модель работает в браузере | PyTorch, ONNX, React |
+| ARTSPACE | сайт арт-клуба с 3D и загрузкой работ | React, three.js, Express |
+| QAIRU karta | 3D-карта учебного корпуса | react-three-fiber |
+| LOOKI | стилист: гардероб, чат, удаление фона прямо в браузере | React, transformers.js |
 
-**holdfast** `Go`
-Линтер инструкций и предохранитель для ИИ-агентов (Claude Code, Cursor, Codex). Встаёт в Claude Code как PreToolUse-хук: необратимое вроде `rm -rf ~`, `git push --force` или `curl | sh` запрещает и подсказывает, как правильно; обратимое пропускает и делает снапшот. Правила из `CLAUDE.md` превращает в проверяемые. Один статический бинарник, хук отвечает примерно за 50 мкс. Репозиторий пока закрыт.
+Ещё: IELTS Helper, [Vibe_wear](https://github.com/roma2246/Vibe_wear), [StudyMate](https://github.com/roma2246/StudyMate), [карта на Flutter](https://github.com/roma2246/map_front), Go в tomorrow school.
 
-### Проекты
+<img src="assets/status.svg" width="100%" alt="Коммиты за последние 45 дней">
 
-- **Qairu**: платформа клуба настольного тенниса. Аккаунты, роли, мероприятия, запись с лимитами, рейтинг Elo. `React 19` `TypeScript` `Node` `Neon`
-- **[EmoCam](https://github.com/roma2246/FACE_Detect)**: эмоции по веб-камере прямо в браузере. Модель обучена на PyTorch и экспортирована в ONNX, лицо ищет MediaPipe. `PyTorch` `ONNX` `onnxruntime-web` `React`
-- **ARTSPACE**: сайт арт-клуба с 3D на three.js и загрузкой работ в S3. Промо-ролик к нему со звуком, который синтезирован с нуля на numpy. `React` `three.js` `Express` `Postgres`
-- **QAIRU karta**: 3D-карта учебного корпуса по векторным планам этажей. `react-three-fiber` `zustand`
-- **LOOKI**: персональный стилист. Гардероб, чат, удаление фона и модели прямо в браузере. `React 19` `transformers.js` `Express`
+### Гости
 
-<details>
-<summary>ещё</summary>
-<br>
+<!-- guests:start -->
+<sub>пока никого</sub>
+<!-- guests:end -->
 
-- **IELTS Helper**: подготовка к IELTS с Gemini. `React` `Express` `SQLite`
-- **[Vibe_wear](https://github.com/roma2246/Vibe_wear)**: фронт магазина одежды. `React` `Tailwind` `framer-motion`
-- **[StudyMate](https://github.com/roma2246/StudyMate)** + [бэк на Java](https://github.com/roma2246/StudyMate_back)
-- **[map_front](https://github.com/roma2246/map_front)** + [map_back](https://github.com/roma2246/map_back): карта на Flutter
-- **Go**: piscine в tomorrow school, REST API на chi + pgx
-
-</details>
-
-### Стек
-
-```
-языки    TypeScript, JavaScript, Python, Go, SQL; немного Dart и Java
-фронт    React, Vite, Tailwind, three.js / react-three-fiber, framer-motion, MUI
-бэк      Node + Express, FastAPI, Go (chi, pgx), PostgreSQL / Neon, Supabase, SQLite
-ml       PyTorch, Triton, ONNX, MediaPipe, transformers.js
-llm      Claude, Gemini, Vertex AI
-прочее   Docker, GitHub Actions
-```
-
-### Статус
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/status-dark.svg">
-  <img src="assets/status-light.svg" width="100%" alt="Активность по коммитам за последние 45 дней">
-</picture>
-
-<sub>Настоящие коммиты за 45 дней, без названий репозиториев и сообщений. Обновляет <a href="scripts/status.py">скрипт</a> раз в сутки.</sub>
+<sub><a href="https://github.com/roma2246/roma2246/issues/new?title=%F0%9F%91%8B&body=%D0%9D%D0%B8%D1%87%D0%B5%D0%B3%D0%BE%20%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%20%D0%BD%D0%B5%20%D0%BD%D1%83%D0%B6%D0%BD%D0%BE%2C%20%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%20%D0%BD%D0%B0%D0%B6%D0%BC%D0%B8%20Create.">Оставь след</a>: создаёшь issue в один клик, и через минуту твоя аватарка появляется здесь. График выше и этот список обновляют <a href=".github/workflows">GitHub Actions</a>.</sub>

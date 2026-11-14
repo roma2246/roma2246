@@ -1,0 +1,44 @@
+name: guest
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: readme-write
+  cancel-in-progress: false
+
+jobs:
+  sign:
+    # Только issue из ссылки «Оставь след»; обычные issue не трогаем.
+    if: startsWith(github.event.issue.title, '👋')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Add guest to README
+        run: python3 scripts/guest.py
+
+      - name: Commit if changed
+        env:
+          LOGIN: ${{ github.event.issue.user.login }}
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "no changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -q -m "guest: $LOGIN" -- README.md
+          git pull -q --rebase origin main
+          git push
+
+      - name: Close issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMBER: ${{ github.event.issue.number }}
+        run: gh issue close "$NUMBER" --repo "$GITHUB_REPOSITORY" --comment "Готово, ты в README. Спасибо, что зашёл 👋"
